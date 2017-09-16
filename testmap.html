@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_00c6808c022a4d5dabd1db6af02c7ff8 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_00c6808c022a4d5dabd1db6af02c7ff8" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_00c6808c022a4d5dabd1db6af02c7ff8 = L.map(
+                                  'map_00c6808c022a4d5dabd1db6af02c7ff8',
+                                  {center: [53.4239,-7.9407],
+                                  zoom: 7,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_0b23d7b0faf048959cb1ed59df45580e = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_00c6808c022a4d5dabd1db6af02c7ff8);
+        
+    
+            var feature_group_d682c4f4b9e14e56b1f65b517128fe5f = L.featureGroup(
+                ).addTo(map_00c6808c022a4d5dabd1db6af02c7ff8);
+        
+    
+            var circle_marker_bd49861a0ea645a0931f85b54ec1d262 = L.circleMarker(
+                [51.8866106,-8.4050131],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_591cc18cebe443aeba92ac9496a0613e = L.popup({maxWidth: '300'});
+
+            
+                var html_aa58eb8fe97f4c30ad63ffd356d4b85f = $('<div id="html_aa58eb8fe97f4c30ad63ffd356d4b85f" style="width: 100.0%; height: 100.0%;">Jacobs Engineering </div>')[0];
+                popup_591cc18cebe443aeba92ac9496a0613e.setContent(html_aa58eb8fe97f4c30ad63ffd356d4b85f);
+            
+
+            circle_marker_bd49861a0ea645a0931f85b54ec1d262.bindPopup(popup_591cc18cebe443aeba92ac9496a0613e);
+
+            
+        
+    
+            var circle_marker_5154b76806174a819e6de4c65cb33524 = L.circleMarker(
+                [53.293685,-6.140891],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_da78072fd0a74cb7a3ef8f8847b5202b = L.popup({maxWidth: '300'});
+
+            
+                var html_be94e598a844494188b193480dcad9d9 = $('<div id="html_be94e598a844494188b193480dcad9d9" style="width: 100.0%; height: 100.0%;">Jacobs Engineering </div>')[0];
+                popup_da78072fd0a74cb7a3ef8f8847b5202b.setContent(html_be94e598a844494188b193480dcad9d9);
+            
+
+            circle_marker_5154b76806174a819e6de4c65cb33524.bindPopup(popup_da78072fd0a74cb7a3ef8f8847b5202b);
+
+            
+        
+    
+            var circle_marker_5ad1dd73e20643d8bb94c762cb8275e0 = L.circleMarker(
+                [53.293685,-6.140891],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_671d6a1fe6c84ee6aec1e95508bf128e = L.popup({maxWidth: '300'});
+
+            
+                var html_6f36ff7a3daa48a1b66b3786ef5e2008 = $('<div id="html_6f36ff7a3daa48a1b66b3786ef5e2008" style="width: 100.0%; height: 100.0%;">Punch Consulting Engineers</div>')[0];
+                popup_671d6a1fe6c84ee6aec1e95508bf128e.setContent(html_6f36ff7a3daa48a1b66b3786ef5e2008);
+            
+
+            circle_marker_5ad1dd73e20643d8bb94c762cb8275e0.bindPopup(popup_671d6a1fe6c84ee6aec1e95508bf128e);
+
+            
+        
+    
+            var circle_marker_c25c2838495842b1b4bf19618c65c297 = L.circleMarker(
+                [51.8870933,-8.4151358],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_c2aa2a38b12e4f258682713df4066d8d = L.popup({maxWidth: '300'});
+
+            
+                var html_878c814f5c874314b5ccc2eab9019746 = $('<div id="html_878c814f5c874314b5ccc2eab9019746" style="width: 100.0%; height: 100.0%;">Project Management </div>')[0];
+                popup_c2aa2a38b12e4f258682713df4066d8d.setContent(html_878c814f5c874314b5ccc2eab9019746);
+            
+
+            circle_marker_c25c2838495842b1b4bf19618c65c297.bindPopup(popup_c2aa2a38b12e4f258682713df4066d8d);
+
+            
+        
+    
+            var circle_marker_683fff3408aa43b494bf7956f1c284f5 = L.circleMarker(
+                [53.3139868,-6.2021227],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_7dfe012eddf44f8aaa0eed1174cee969 = L.popup({maxWidth: '300'});
+
+            
+                var html_439df101cf5d435290be9624fabd38d0 = $('<div id="html_439df101cf5d435290be9624fabd38d0" style="width: 100.0%; height: 100.0%;">Project Management </div>')[0];
+                popup_7dfe012eddf44f8aaa0eed1174cee969.setContent(html_439df101cf5d435290be9624fabd38d0);
+            
+
+            circle_marker_683fff3408aa43b494bf7956f1c284f5.bindPopup(popup_7dfe012eddf44f8aaa0eed1174cee969);
+
+            
+        
+    
+            var circle_marker_4ef7b85c6a95421b8e2fa99bf1e525b0 = L.circleMarker(
+                [53.288811,-6.370321],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_5143c2d5b55d490eaf4ebd656a4514d0 = L.popup({maxWidth: '300'});
+
+            
+                var html_bb2fd621c89448ec89208923d00389ce = $('<div id="html_bb2fd621c89448ec89208923d00389ce" style="width: 100.0%; height: 100.0%;">Ethos Engineering Ltd </div>')[0];
+                popup_5143c2d5b55d490eaf4ebd656a4514d0.setContent(html_bb2fd621c89448ec89208923d00389ce);
+            
+
+            circle_marker_4ef7b85c6a95421b8e2fa99bf1e525b0.bindPopup(popup_5143c2d5b55d490eaf4ebd656a4514d0);
+
+            
+        
+    
+            var circle_marker_ea29990fee324ca3a916a6cc973983cd = L.circleMarker(
+                [53.2892936,-6.1384707],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_94a1389ae0054e86b9465cba7423c89e = L.popup({maxWidth: '300'});
+
+            
+                var html_33ab78e82d4b4524b2493d4b1b432d07 = $('<div id="html_33ab78e82d4b4524b2493d4b1b432d07" style="width: 100.0%; height: 100.0%;">DPS Engineering & Construction Limited</div>')[0];
+                popup_94a1389ae0054e86b9465cba7423c89e.setContent(html_33ab78e82d4b4524b2493d4b1b432d07);
+            
+
+            circle_marker_ea29990fee324ca3a916a6cc973983cd.bindPopup(popup_94a1389ae0054e86b9465cba7423c89e);
+
+            
+        
+    
+            var circle_marker_a9a1954364fb4c68be85443602d84a67 = L.circleMarker(
+                [51.9034202,-8.3642774],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_48e7179dff194b589c8ef04177a9855f = L.popup({maxWidth: '300'});
+
+            
+                var html_1247f322ce424c4aa8c38d3244897796 = $('<div id="html_1247f322ce424c4aa8c38d3244897796" style="width: 100.0%; height: 100.0%;">Malachy Walsh and Partners </div>')[0];
+                popup_48e7179dff194b589c8ef04177a9855f.setContent(html_1247f322ce424c4aa8c38d3244897796);
+            
+
+            circle_marker_a9a1954364fb4c68be85443602d84a67.bindPopup(popup_48e7179dff194b589c8ef04177a9855f);
+
+            
+        
+    
+            var circle_marker_dccbf0ae9d774816ad0f2a14025b2635 = L.circleMarker(
+                [51.885948,-8.4149469],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_d3d1514cf31a4871aa59d736e6fee6fa = L.popup({maxWidth: '300'});
+
+            
+                var html_3ccbfbd828704f7f8c373c988276d6a9 = $('<div id="html_3ccbfbd828704f7f8c373c988276d6a9" style="width: 100.0%; height: 100.0%;">Eireng Consulting Engineers </div>')[0];
+                popup_d3d1514cf31a4871aa59d736e6fee6fa.setContent(html_3ccbfbd828704f7f8c373c988276d6a9);
+            
+
+            circle_marker_dccbf0ae9d774816ad0f2a14025b2635.bindPopup(popup_d3d1514cf31a4871aa59d736e6fee6fa);
+
+            
+        
+    
+            var circle_marker_68d2f167177d4edeac466c39ac70f6ba = L.circleMarker(
+                [51.901436,-8.516573],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_9e90417bc54e40f489b8c69d90e70d4d = L.popup({maxWidth: '300'});
+
+            
+                var html_f59e165ee11f4cbba6b171789f2693ce = $('<div id="html_f59e165ee11f4cbba6b171789f2693ce" style="width: 100.0%; height: 100.0%;">Ray Keane and Associates  </div>')[0];
+                popup_9e90417bc54e40f489b8c69d90e70d4d.setContent(html_f59e165ee11f4cbba6b171789f2693ce);
+            
+
+            circle_marker_68d2f167177d4edeac466c39ac70f6ba.bindPopup(popup_9e90417bc54e40f489b8c69d90e70d4d);
+
+            
+        
+    
+            var circle_marker_94f425e2603c4ea1a0edcbc4731d7084 = L.circleMarker(
+                [53.2954305,-6.1444797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_a6872f14c95d4c1c9edfb05638ac933c = L.popup({maxWidth: '300'});
+
+            
+                var html_0a81623ec1734fa1b7be606a07a976ca = $('<div id="html_0a81623ec1734fa1b7be606a07a976ca" style="width: 100.0%; height: 100.0%;">RPS Group </div>')[0];
+                popup_a6872f14c95d4c1c9edfb05638ac933c.setContent(html_0a81623ec1734fa1b7be606a07a976ca);
+            
+
+            circle_marker_94f425e2603c4ea1a0edcbc4731d7084.bindPopup(popup_a6872f14c95d4c1c9edfb05638ac933c);
+
+            
+        
+    
+            var circle_marker_b7469fb13fb3400daba4617caf8586e3 = L.circleMarker(
+                [51.8866106,-8.4050131],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_6ced253371e8403485f66083709f72dc = L.popup({maxWidth: '300'});
+
+            
+                var html_491f78ccc6194362bf2c5bd7793d8fbd = $('<div id="html_491f78ccc6194362bf2c5bd7793d8fbd" style="width: 100.0%; height: 100.0%;">Kavanagh Burke Consulting Engineers </div>')[0];
+                popup_6ced253371e8403485f66083709f72dc.setContent(html_491f78ccc6194362bf2c5bd7793d8fbd);
+            
+
+            circle_marker_b7469fb13fb3400daba4617caf8586e3.bindPopup(popup_6ced253371e8403485f66083709f72dc);
+
+            
+        
+    
+            var circle_marker_7d518db32ad244698d51b22f8d7b7c18 = L.circleMarker(
+                [53.2954305,-6.1444797],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_f6556f957d7c4ea69490bb4012717f82 = L.popup({maxWidth: '300'});
+
+            
+                var html_fa8d202a02bd4992982b143831fb9c61 = $('<div id="html_fa8d202a02bd4992982b143831fb9c61" style="width: 100.0%; height: 100.0%;">BioPharma Engineering </div>')[0];
+                popup_f6556f957d7c4ea69490bb4012717f82.setContent(html_fa8d202a02bd4992982b143831fb9c61);
+            
+
+            circle_marker_7d518db32ad244698d51b22f8d7b7c18.bindPopup(popup_f6556f957d7c4ea69490bb4012717f82);
+
+            
+        
+    
+            var circle_marker_7d9845a574d64fdd93412b5e30a141c4 = L.circleMarker(
+                [51.887913,-8.40315],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_cda97e9c2e2c408b9e8a5fde2028de02 = L.popup({maxWidth: '300'});
+
+            
+                var html_c23291a1017744d8a0014f08ab2ec95d = $('<div id="html_c23291a1017744d8a0014f08ab2ec95d" style="width: 100.0%; height: 100.0%;">BioPharma Engineering </div>')[0];
+                popup_cda97e9c2e2c408b9e8a5fde2028de02.setContent(html_c23291a1017744d8a0014f08ab2ec95d);
+            
+
+            circle_marker_7d9845a574d64fdd93412b5e30a141c4.bindPopup(popup_cda97e9c2e2c408b9e8a5fde2028de02);
+
+            
+        
+    
+            var circle_marker_aa7569868bcc4d0d85bfe884b1a27c79 = L.circleMarker(
+                [53.3261286,-6.3629726],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_820d507ddeeb46ed9397fef83c9457ef = L.popup({maxWidth: '300'});
+
+            
+                var html_8a8063ae1ed44e19bbe4e7aa044eae3e = $('<div id="html_8a8063ae1ed44e19bbe4e7aa044eae3e" style="width: 100.0%; height: 100.0%;">M E P Engineering Services Ltd  </div>')[0];
+                popup_820d507ddeeb46ed9397fef83c9457ef.setContent(html_8a8063ae1ed44e19bbe4e7aa044eae3e);
+            
+
+            circle_marker_aa7569868bcc4d0d85bfe884b1a27c79.bindPopup(popup_820d507ddeeb46ed9397fef83c9457ef);
+
+            
+        
+    
+            var circle_marker_bb9fdea617d243b584dab39211913b01 = L.circleMarker(
+                [51.8103484,-8.3689803],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_755318ae26cd47dab3ab17aecbf718f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc089ae43a0f4a2a9493682ac49ca109 = $('<div id="html_fc089ae43a0f4a2a9493682ac49ca109" style="width: 100.0%; height: 100.0%;">Tandem Project Management </div>')[0];
+                popup_755318ae26cd47dab3ab17aecbf718f8.setContent(html_fc089ae43a0f4a2a9493682ac49ca109);
+            
+
+            circle_marker_bb9fdea617d243b584dab39211913b01.bindPopup(popup_755318ae26cd47dab3ab17aecbf718f8);
+
+            
+        
+    
+            var circle_marker_d744ed49d1cd4608909383953c532600 = L.circleMarker(
+                [53.3360826,-6.2390714],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_24508e2496dd4884a5380dc385a2e17b = L.popup({maxWidth: '300'});
+
+            
+                var html_8c2ccc4ca11d4ff0aabddceb22564512 = $('<div id="html_8c2ccc4ca11d4ff0aabddceb22564512" style="width: 100.0%; height: 100.0%;">McElroy Associates </div>')[0];
+                popup_24508e2496dd4884a5380dc385a2e17b.setContent(html_8c2ccc4ca11d4ff0aabddceb22564512);
+            
+
+            circle_marker_d744ed49d1cd4608909383953c532600.bindPopup(popup_24508e2496dd4884a5380dc385a2e17b);
+
+            
+        
+    
+            var circle_marker_1191b8912d7e4e7281b3219cb75f55a7 = L.circleMarker(
+                [53.3405249,-6.2431803],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_8128d2b68ce64ec9a17758751ec34e70 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a350e32a5564459a13b8195dbeb5a06 = $('<div id="html_0a350e32a5564459a13b8195dbeb5a06" style="width: 100.0%; height: 100.0%;">Callaghan Engineering Ltd </div>')[0];
+                popup_8128d2b68ce64ec9a17758751ec34e70.setContent(html_0a350e32a5564459a13b8195dbeb5a06);
+            
+
+            circle_marker_1191b8912d7e4e7281b3219cb75f55a7.bindPopup(popup_8128d2b68ce64ec9a17758751ec34e70);
+
+            
+        
+    
+            var circle_marker_196801b8b1fb49c9a403d814758e7bfb = L.circleMarker(
+                [53.2843617,-9.0357081],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_506b898a2b6146d48075863dfbf8dbbf = L.popup({maxWidth: '300'});
+
+            
+                var html_6336858567a040feadfbbc1168060217 = $('<div id="html_6336858567a040feadfbbc1168060217" style="width: 100.0%; height: 100.0%;">Callaghan Engineering Ltd </div>')[0];
+                popup_506b898a2b6146d48075863dfbf8dbbf.setContent(html_6336858567a040feadfbbc1168060217);
+            
+
+            circle_marker_196801b8b1fb49c9a403d814758e7bfb.bindPopup(popup_506b898a2b6146d48075863dfbf8dbbf);
+
+            
+        
+    
+            var circle_marker_0dce3d4f61e44ff7884f9bc8d19a1bb0 = L.circleMarker(
+                [53.3405249,-6.2431803],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_4a361402697440f89d3598ef8b2f6c78 = L.popup({maxWidth: '300'});
+
+            
+                var html_6fbd84c06062466183298b803838d001 = $('<div id="html_6fbd84c06062466183298b803838d001" style="width: 100.0%; height: 100.0%;">Kyne and Clyne Engineering Consultants Ltd</div>')[0];
+                popup_4a361402697440f89d3598ef8b2f6c78.setContent(html_6fbd84c06062466183298b803838d001);
+            
+
+            circle_marker_0dce3d4f61e44ff7884f9bc8d19a1bb0.bindPopup(popup_4a361402697440f89d3598ef8b2f6c78);
+
+            
+        
+    
+            var circle_marker_e6725c02b0454366a2bdd7fd5a72d8b3 = L.circleMarker(
+                [53.3231902,-6.368826],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.4,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 0.5
+}
+                ).addTo(feature_group_d682c4f4b9e14e56b1f65b517128fe5f);
+            
+    
+            var popup_9654b8f4f1d94d09abf84f2d9a0680bf = L.popup({maxWidth: '300'});
+
+            
+                var html_d4db3f57ef424a6fba442efb149eef42 = $('<div id="html_d4db3f57ef424a6fba442efb149eef42" style="width: 100.0%; height: 100.0%;">Synergy Engineering Ltd </div>')[0];
+                popup_9654b8f4f1d94d09abf84f2d9a0680bf.setContent(html_d4db3f57ef424a6fba442efb149eef42);
+            
+
+            circle_marker_e6725c02b0454366a2bdd7fd5a72d8b3.bindPopup(popup_9654b8f4f1d94d09abf84f2d9a0680bf);
+
+            
+        
+</script>
